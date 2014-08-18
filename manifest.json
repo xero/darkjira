@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "darkjira",
+    "description": "a crude google chrome extension to darken atlassian jira",
+    "version": "0.1.0",
+    "permissions": [
+        "tabs",
+        "<all_urls>",
+        "storage",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [ 
+        { 
+            "all_frames": false, 
+            "js": [ "js/start.js"], 
+            "matches": [ 
+                "*://*.atlassian.net/*"
+            ],
+            "run_at": "document_start" 
+        } 
+    ],
+    "web_accessible_resources": [
+        "js/start.js",
+        "css/darkjira.min.css"
+    ]
+}

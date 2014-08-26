@@ -5,6 +5,29 @@ html {
 img {
 	-webkit-filter: invert(100%) !important;
 }
+/* ----------------------------------------------------------[tempo] */
+.timeframe-color {
+	color: #333 !important;
+}
+.aui-button .aui-icon {
+	color: #ccc !important;
+	text-shadow: 0 1px 0 #333 !important;
+}
+.aui-button .icon-previous:after {
+	border-right-color: #000 !important;	
+}
+.aui-button .icon-next:after {
+	border-left-color: #000 !important;	
+}
+.tempo-timesheet #issuetable td.tt-current-day, 
+.tempo-calendar #issuetable td.tt-current-day, 
+.tempo-calendar #issuetable td.tt-current-day:hover {
+	background-color: #ccc !important;	
+}
+/* ---------------------------------------------------------[images] */
+#heading-avatar {
+	-webkit-filter: invert(100%) !important;
+}
 /* ----------------------------------------------------------[links] */
 a,
 a:visited {
